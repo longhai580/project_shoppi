@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import MyContext from '../contexts/MyContext';
 import withRouter from '../utils/withRouter';
-
+import '../styles/login.css'
 class Login extends Component {
   static contextType = MyContext; // using this.context to access global state
   constructor(props) {
@@ -14,14 +14,17 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="align-center">
-        <h2 className="text-center">CUSTOMER LOGIN</h2>
+      <div className="login-align-center">
         <form>
-          <table className="align-center">
-            <tbody>
+          <table className="tb-align-center">
+          <h2 className="login-text-center">CUSTOMER LOGIN</h2>
+            <tbody className='f-login'>
               <tr>
                 <td>Username</td>
-                <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
+                <td>
+                  <input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} />
+                  <div className='underline'></div>
+                </td>
               </tr>
               <tr>
                 <td>Password</td>

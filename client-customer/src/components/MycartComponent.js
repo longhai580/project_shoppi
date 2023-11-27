@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import MyContext from '../contexts/MyContext';
 import CartUtil from '../utils/CartUtil';
 import axios from 'axios';
-import withRouter from '../utils/withRouter';
+import  '../styles/cart.css'
+
 
 class Mycart extends Component {
   static contextType = MyContext; // using this.context to access global state
@@ -24,8 +25,8 @@ class Mycart extends Component {
       );
     });
     return (
-      <div className="align-center">
-        <h2 className="text-center">ITEM LIST</h2>
+      <div className="cart-align-center">
+        <h2 className="cart-text-center">ITEM LIST</h2>
         <table className="datatable" border="1">
           <tbody>
             <tr className="datatable">

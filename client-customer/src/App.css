@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
 /* styles.css */
+*{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
 .body-customer {
-  width: 1150px;
-  height: fit-content;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  height: auto;
   margin: 0px auto;
+  background-color: #DBEAE9; /* Màu cho thanh search */
+
 }
 .body-admin {
   width: fit-content;
   height: fit-content;
   margin: 0px auto;
+
 }
 div.inline {
   display: inline-block;
@@ -36,29 +49,7 @@ span.link {
   color: blue;
   text-decoration: underline;
 }
-/* menu.css */
-div.border-bottom {
-  border-bottom: 1px solid black;
-  padding: 10px 0px 10px 0px;
-}
-div.float-left {
-  float: left;
-}
-div.float-right {
-  float: right;
-}
-div.float-clear {
-  clear: both;
-}
-ul.menu {
-  margin: 0px;
-  padding: 0px;
-}
-li.menu {
-  display: inline;
-  margin-right: 20px;
-  text-transform: uppercase;
-}
+
 form.search {
   margin: 0px;
 }

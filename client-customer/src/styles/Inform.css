@@ -1,0 +1,118 @@
+.inform-border-botom{
+  height: 90px;
+  display: flex;
+}
+.float-left{
+    align-items: center;
+    display: flex;
+}
+.hotline{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.hotline .fa-phone-volume {
+    font-size: 24px; /* You can adjust the size as needed */
+  }
+.hotline p{
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 2px;
+    font-size: 13px;
+}
+.cart{
+    margin-top: 2px;
+    margin-left: 50px;
+    position: relative;
+    width: 129px;
+    justify-content: space-between;
+    
+    
+
+}
+.cart .fa-cart-arrow-down {
+    color: black;
+    font-size: 24px;
+   
+
+}
+.search{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 600px;
+    
+}
+.cart span{
+    font-size: 10px;
+   background-color: red; 
+   border-radius:50%;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   position: absolute;
+   top: -14px;
+   left: 15%;
+   padding: 3px 10px;
+
+
+}
+.cart-text {
+    font-size: 13px;  
+    margin-left:-90px;
+  }
+
+  .cart-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .truck{
+    margin-left: 40px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .truck .fa-truck {
+    font-size: 24px;
+  }
+  .truck p{
+    margin-left: 5px;
+  }
+  .shop{
+    margin-left: 40px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .shop .fa-store {
+    font-size: 24px;
+  }
+  .shop p{
+    margin-left: 5px;
+  }
+  .user-icon{
+    margin-top: 0px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    left: 5%;
+
+  }
+  .user-icon .fa-user {
+    font-size: 24px;
+  }
+  .user-icon p{
+    margin-left: 10px;
+  }
+ 

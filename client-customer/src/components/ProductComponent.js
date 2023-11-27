@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import withRouter from '../utils/withRouter';
-
+import '../styles/Product.css'
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -22,9 +22,11 @@ class Product extends Component {
       );
     });
     return (
+      <div className="container">
       <div className="text-center">
         <h2 className="text-center">LIST PRODUCTS</h2>
         {prods}
+      </div>
       </div>
     );
   }

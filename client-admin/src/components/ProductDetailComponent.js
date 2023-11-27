@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import MyContext from '../contexts/MyContext';
-
+import './pro.css'
 class ProductDetail extends Component {
   static contextType = MyContext; // using this.context to access global state
   constructor(props) {
@@ -11,8 +11,10 @@ class ProductDetail extends Component {
       txtID: '',
       txtName: '',
       txtPrice: 0,
+      txtTn:'' ,
       cmbCategory: '',
       imgProduct: '',
+
     };
   }
   render() {
@@ -40,6 +42,10 @@ class ProductDetail extends Component {
               <tr>
                 <td>Price</td>
                 <td><input type="text" value={this.state.txtPrice} onChange={(e) => { this.setState({ txtPrice: e.target.value }) }} /></td>
+              </tr>
+              <tr>
+                <td>Mô tả</td>
+                <td><input type="text" value={this.state.txtTn} onChange={(e) => { this.setState({ txtTn: e.target.value }) }} /></td>
               </tr>
               <tr>
                 <td>Image</td>

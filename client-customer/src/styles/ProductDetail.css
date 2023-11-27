@@ -1,0 +1,434 @@
+/* Add these styles to your existing CSS file */
+*{
+  margin: 0 ;
+  padding: 0;
+ box-sizing: content-box;}
+.pro-detail-align-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #DBEAE9;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.name-pro {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  margin-top: -35px;
+  text-align: left;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  justify-content: left;
+}
+.name-pro p{
+  margin-top: 5px;
+  color: black;
+  margin-left: 5px;
+  display: inline-block; /* Đảm bảo phần tử chứa icon và văn bản là inline-block để sử dụng vertical-align */
+
+}
+.fa-star {
+  font-size: 10px; /* Adjust the font size as needed */
+  vertical-align: middle;
+  margin-top: -4px; /* Canh giữa theo chiều dọc */
+}
+.icon-heart{
+position: absolute;
+top: 70px; /* Adjust the top position as needed */
+left: 60px; /* Adjust the left position as needed */
+color: black; /* Change the color to your desired value */
+font-size: 24px; /* Change the font size to your desired value */
+z-index: 1; /* Ensure the heart icon is above the image */
+}
+.name-pro button{
+  margin-top: 2px;
+height: 25px;
+margin-left: 20px ;
+border-radius: 20px;
+background-color: #DBEAE9;
+}
+.caption-left {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-width: 50%;
+  width: 50%;
+  -webkit-margin-top: -140px;
+  margin-top: -140px;
+  -webkit-margin-left: 80px;
+  margin-left: 80px;
+}
+
+.caption-right {
+  width: 50%; /* Occupy half of the web page */
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex: -2;
+  max-width: 33.33333%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33333% - 40px);
+  margin-left: 40%;
+  margin-top: -35.5%;
+  position: relative;
+}
+
+
+
+
+.product-img {
+  padding: 10px;
+  width: 50%; /* Occupy the entire width of the parent */
+  height: 500px;
+  background-color: #9ABCBF;
+  display: flex;
+  position: relative;
+  border-radius: 25px;
+  justify-content: space-between;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 7%;
+  margin-left: -2%;
+}
+
+.product-img .img-pr {
+  margin-top: 50px;
+  width: 300px;
+}
+
+/* Add your existing styles for .caption-left, .caption-right, .form-product, .btn-price, etc. */
+.caption-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+  margin-top: -140px;
+  margin-left: 80px;
+  
+}
+
+.caption-left img {
+  border-radius: 20px;
+  width: 370px;
+  margin-left: 30px;
+  
+}
+.box-price{
+  margin-top: 20%;
+  width: 500px;
+  height: 170px;
+
+}
+.box-data {
+  border-radius: 15px;
+  width: 500px;
+  height: auto; /* Đặt chiều cao là auto để nó co dãn theo nội dung */
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Cho phép các phần tử co dãn ra hàng mới khi không đủ không gian */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 px;
+}
+
+.list-data {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  width: 100%; /* Chắc chắn rằng chiều rộng của danh sách là 100% */
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử co dãn ra hàng mới khi không đủ không gian */
+  justify-content: space-between;
+}
+.list-data .item-list-data {
+  flex: 0 0 calc(30% - 5px);
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 3px 2px;
+  text-decoration: none;
+  width: 140px;
+  height: 50px;
+  font-size: 12px;
+}
+.list-data .item-list-data.active  {
+  background-color: #DBEAE9;
+  border: 3px solid black; 
+  border-radius: 15px;  /* Biên khi được chọn */
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng bên trong với màu đen có độ trong suốt */
+
+}
+.check-icon-data {
+  display: none; /* Mặc định ẩn icon check */
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #DBEAE9;
+  color: black; /* Màu chữ của icon check */
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  border: 2px solid #000000;
+}
+
+.box-title {
+  position: absolute;
+  top: 25%; /* Điều chỉnh khoảng cách giữa box title và box detail */
+  left: -20px;
+  font-weight: bold;
+  padding: 0 10px; /* Điều chỉnh độ rộng của box title */
+}
+.box-detail {
+  position: relative;
+}
+.list-variant  {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0; /* Điều chỉnh khoảng cách giữa box title và box detail */
+}
+.list-variant .item-list-variant {
+  flex: 0 0 calc(30% - 5px); /* Adjust the width as needed with margin */
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 3px 2px;
+  text-decoration: none;
+  width: 140px;
+  height: 80px; /* Adjust the height as needed */
+  font-size: 12px;
+}
+.item-list-data, .item-list-variant {
+  position: relative;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  margin: 0 0 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.item-list-variant img {
+  width: 30px;
+  border-radius: 5px;
+  height: 50px;
+  margin-right: 60px;
+  margin-top: -7px; /* Adjust as needed for spacing between img and div.item-des */
+}
+.item-list-variant.active  {
+  background-color: #DBEAE9;
+  border: 3px solid black; 
+  border-radius: 15px;  /* Biên khi được chọn */
+  box-shadow:  0 5px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng bên trong với màu đen có độ trong suốt */
+
+}
+
+.check-icon {
+  display: none; /* Mặc định ẩn icon check */
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #DBEAE9;
+  color: black; /* Màu chữ của icon check */
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  border: 2px solid #000000;
+}
+.list-variant {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item-des {
+  margin-top: -40px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align items vertically in the center */
+  /* Stack item-name and price vertically */
+}
+.item-name {
+  font-weight: bold;
+}
+.btn-buy-now{
+  max-width: 700px;
+  width: 500px;
+  margin-left: 2px;
+  height: 100px;
+  
+  display: flex;
+}
+.btn-buy{
+  
+  margin-top: 10px;
+  /* Điều chỉnh chiều cao theo ý muốn của bạn */
+ 
+}
+.btn-buy button{
+  width: 390px;
+  height: 78px;
+  color: #E8F2F1;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 2px; /* Khoảng cách giữa nút và văn bản */
+  margin-top: 0px;
+  font-weight: 1000;
+  border-radius: 15px;
+
+
+  background-color:#EE3434 ;
+}
+.btn-buy button p{
+  line-height: 10px;
+  text-transform: none;
+  font-weight: 10;
+  color: #E8F2F1;
+}
+.btn-cart button{
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 78px;
+  border: 3px solid #EE3434;
+  border-radius: 15px;
+
+}
+.btn-cart  p{
+  font-size: 12px;
+  color: #000000;
+
+}
+.btn-price{
+  background-color: #E8F2F1 ;
+  border-radius: 15px;
+  border: 3px solid black  !important;
+  width: 700px;
+  height: 60px;
+  margin-left:50px ;
+  margin-top: 10px;
+}
+.form-product{
+  width: 800px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.box-product-varian .list-variant{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around; /* Adjust as needed */
+
+}
+.box-product-varian .list-variant .item-list-variant{
+  flex: 0 0 calc(30% - 5px); /* Adjust the width as needed with margin */
+
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 3px 2px;
+  text-decoration: none;
+  width: 140px;
+  height: 50px;
+  font-size: 12px;
+}
+
+.box-product-varian{
+  margin-top: -12%;
+}
+.align-item-center{
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.btn-price{
+  justify-content: space-between;
+  width: 490px;
+  height: 59px;
+  margin-left: 4px;
+  flex-direction: row;
+  display: flex;
+}
+.txtPr{
+  margin-top: 10px ; 
+  margin-right: 10%;  
+  border: 3px solid #EE3434;
+  width: 100px;
+  height: 30px;
+  text-align: right;
+  border-radius: 10px;
+}
+.txtPr p{
+  text-align: center;
+  margin-top: 4px;
+}
+.textPrice-old{
+  border: 3px solid #EE3434;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%;  
+
+}
+.custom-cart-icon {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: black; /* Set the color to your desired value */
+  margin-right: 5px; /* Adjust the margin as needed */
+  /* Add any other styles you want */
+}
+
+.custom-cart-icon:hover {
+  color: #2980b9; /* Set the hover color to your desired value */
+  /* Add any other hover styles */
+}
+.footer-end{
+  width: 250px;
+  height: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 10px;
+  align-items: center;
+}
+.clear-both {
+  clear: both;
+}

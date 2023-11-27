@@ -8,6 +8,8 @@
   width: fit-content;
   height: fit-content;
   margin: 0px auto;
+  background-color: #DBEAE9; /* Màu cho thanh search */
+
 }
 div.inline {
   display: inline-block;

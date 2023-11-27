@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+.pro-detail-align-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 102.5%;
+    height: 100vh;
+    background-color: #DBEAE9;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+
+  }
+  
+  .caption-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    margin-top: -140px;
+    margin-left: 80px;
+    
+  }
+  
+  .caption-left img {
+    border-radius: 20px;
+    width: 370px;
+    margin-left: 30px;
+    
+  }
+  
+ 
+  
+  form {
+    margin-left: auto; /* Push the form to the right */
+
+    
+  }
+  form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the size as needed */
+    color: black; /* Change the color as needed */
+  }
+  form button:hover {
+    color: #1d6fa5; /* Change the hover color as needed */
+  }
+  .form-product{
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .product-img{
+    padding: 10px;
+    margin-top: -10px;
+    width: 866px;
+    height: 500px;
+    background-color:#9ABCBF ;
+    display: flex;    
+    position: relative;
+    border-radius: 25px;
+    justify-content: space-between;  
+    text-align: center;
+    align-self: start;
+    
+  }
+  .product-img .img-pr{
+    margin-top: 50px;
+    width: 300px;
+  }
+  .btn-buy-now{
+    max-width: 700px;
+    width: 600px;
+    margin-left: 60px;
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+
+  }
+ 
+  .btn-cart{
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    border-radius: 15px;
+    border: 4px solid #EE3434;
+    margin-top: 10px;
+    margin-left: 10px;
+
+  }
+  .btn-cart p{
+    color: black;
+    margin-top: -2px;
+
+  }
+  .btn-buy{
+    background-color: #EE3434;
+    border-radius: 15px;
+    width: 390px;
+    height: 78px;
+    line-height: 0px;
+    margin-top: 10px;
+    /* Điều chỉnh chiều cao theo ý muốn của bạn */
+
+
+   
+  }
+  .btn-buy button{
+    color: #E8F2F1;
+    text-transform: uppercase;
+    align-items: center;
+    margin-right: 2px; /* Khoảng cách giữa nút và văn bản */
+    margin-top: 0px;
+    font-weight: 1000;
+   
+  }
+
+  .btn-price{
+    background-color: #E8F2F1 ;
+    border-radius: 15px;
+    border: 3px solid black  !important;
+    width: 700px;
+    height: 60px;
+    margin-left:50px ;
+    margin-top: 10px;
+  }
+  .box-detail{
+    width: calc(33.33333% + 40px);
+}
+.des-product{
+  margin-top: 100px;
+  width: 460px;
+  
+}
+
+  .des-product h2,p{
+    color:#FFF ;
+    margin-right: 20px;
+  }
+  .des-product p {
+    text-indent: 20px; /* Độ thụt (có thể điều chỉnh giá trị này theo ý muốn của bạn) */
+    text-align: justify;
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách dưới của đoạn văn bản */
+    margin-left: 10px;
+    /* Thụt đồng dòng 1em, bạn có thể điều chỉnh giá trị này theo ý muốn */
+  }
+  .des-product p::before {
+    content: "\2022"; /* Dấu chấm Unicode */
+    display: inline-block;
+    width: 2em; /* Khoảng cách giữa dấu chấm và nội dung */
+    margin-right: 0.5em; /* Khoảng cách giữa dấu chấm và nội dung */
+    margin-top: 10px; /* Điều chỉnh khoảng cách với các phần tử xung quanh */
+  }
+  .txtPr{
+    width: 120px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: 400px;
+    border: 3px solid red;
+    border-radius: 15px;
+    box-shadow: 5px ;
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+    
+  }
+  .txtPr p{
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+
+
+  }
+  .textPrice-old{
+    margin-left: 0px;
+  }
+  .btn-price{
+    justify-content: space-between;
+    width: 460px;
+    height: 59px;
+  }
+  .name-pro{
+    width: 100%;
+    height: 30px;
+  margin-top: 10px;    
+  text-align: left;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);  
+  } 
+  .name-pro p{
+    margin-top: 5px;
+    color: black;
+    margin-left: 5px;
+    display: inline-block; /* Đảm bảo phần tử chứa icon và văn bản là inline-block để sử dụng vertical-align */
+
+  }
+  .fa-star {
+    font-size: 10px;
+    vertical-align: middle;
+    margin-top: -4px; /* Canh giữa theo chiều dọc */
+  }
+  .icon-heart{
+  position: absolute;
+  top: 70px; /* Adjust the top position as needed */
+  left: 60px; /* Adjust the left position as needed */
+  color: black; /* Change the color to your desired value */
+  font-size: 24px; /* Change the font size to your desired value */
+  z-index: 1; /* Ensure the heart icon is above the image */
+  }
+.name-pro button{
+  margin-left: 20px ;
+  border-radius: 20px;
+  background-color: #DBEAE9;
+}
+p.ss {
+  margin-left: 20px;
+}
